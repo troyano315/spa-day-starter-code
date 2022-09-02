@@ -6,7 +6,6 @@
 </head>
 <body>
     <form method="post" action="/user">
-
         <label>Username
             <input type="text" name="username">
         </label>
@@ -20,9 +19,12 @@
         </label>
 
         <label>Verify Password
-            <input type="password" name="password">
+            <input type="password" name="verify">
+            <p th:text="${Error}"><p>
         </label>
 
+        <input type="submit" value="Submit">
     </form>
+
 </body>
 </html>

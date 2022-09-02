@@ -2,9 +2,12 @@
 <html lang="en" xmlns:th="https://www.thymeleaf.org/">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Welcome!</title>
 </head>
 <body>
+<p th:text="'Welcome ' + ${user.username} + '!'"></p>'
+<a th:href="@{/}">Click Here!!</a>
+
 
 </body>
 </html>
